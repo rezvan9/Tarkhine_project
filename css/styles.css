@@ -38,6 +38,7 @@ h3 {
 
 h6 {
   font-size: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 /* -------------------PAGE SETTINGS ------------ */
@@ -46,7 +47,7 @@ h6 {
 }
 
 .block {
-  padding: 1rem;
+  padding: 1rem 5rem;
 }
 
 /* ------------------- BUTTONS ----------------- */
@@ -76,10 +77,12 @@ h6 {
   background: transparent;
   display: flex;
   justify-content: space-around;
-  width: 20rem;
-  padding: 0.8rem 3rem;
+  align-items: center;
+  width: 17.3rem;
+  padding: 0.5rem 2rem;
   color: #fff;
   border: 2px solid #fff;
+  font-size: 1.2rem;
 }
 
 .btn--tertiary img {
@@ -172,4 +175,80 @@ h6 {
 }
 
 /* ------------------ ABOUT SECTION ------------------- */
+.about-section {
+  width: 100%;
+}
 
+.about-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("/assets/images/out-door-cafe.jpg");
+  background-position: center;
+  margin: 0 auto;
+  color: #fff;
+  position: absolute;
+  padding: 1.6rem 2rem;
+  line-height: 2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content p {
+  font-size: 1rem;
+}
+
+.about-content .btn {
+  margin-top: 2rem;
+}
+
+.about__icons {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  font-size: 1.2rem;
+}
+
+.about__icons .icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 9rem;
+  }
+
+  .about-content {
+    width: 50%;
+  }
+
+  .about-content h6 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .about__icons {
+    width: 50%;
+    font-size: 1.8rem;
+    margin-top: 0;
+    gap: 1.8rem;
+    padding: 1rem 2rem;
+  
+  }
+
+  .about__icons .icon-container {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+}
