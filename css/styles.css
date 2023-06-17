@@ -196,7 +196,7 @@ h6 {
   margin-bottom: 5rem;
 }
 
-.about-content{
+.about-content {
   position: relative;
 }
 
@@ -208,7 +208,6 @@ h6 {
   margin-top: 2rem;
   position: absolute;
   left: 0;
-
 }
 
 .about__icons {
@@ -227,21 +226,27 @@ h6 {
   align-items: center;
 }
 
+.icon-container img {
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .about-wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 9rem;
+    padding: 0 10.8rem;
+    width: 100%;
   }
 
   .about-content {
     width: 50%;
+    margin: 4.8rem 0 2.8rem 6rem;
   }
 
   .about-content h6 {
     font-size: 2.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .about-content p {
@@ -251,16 +256,16 @@ h6 {
   .about__icons {
     width: 50%;
     font-size: 1.8rem;
-    margin-top: 0;
-    padding: 2rem 8rem;
+    margin: 5rem -2rem;
+    padding: 0 6rem;
     gap: 1.8rem;
   }
 
   .about__icons .icon-container {
-    width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    background-color: red;
-    margin: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: 1.8rem;
   }
 }
