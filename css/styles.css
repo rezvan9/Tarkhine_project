@@ -43,7 +43,7 @@ h6 {
 
 /* -------------------PAGE SETTINGS ------------ */
 .container {
-  width: 100%;
+  width: 1222px;
 }
 
 .block {
@@ -177,20 +177,27 @@ h6 {
 /* ------------------ ABOUT SECTION ------------------- */
 .about-section {
   width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("/assets/images/out-door-cafe.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
 }
 
 .about-wrapper {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("/assets/images/out-door-cafe.jpg");
-  background-position: center;
   margin: 0 auto;
   color: #fff;
-  position: absolute;
+  width: 100%;
   padding: 1.6rem 2rem;
   line-height: 2rem;
   text-align: justify;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.about-content{
+  position: relative;
 }
 
 .about-content p {
@@ -199,10 +206,14 @@ h6 {
 
 .about-content .btn {
   margin-top: 2rem;
+  position: absolute;
+  left: 0;
+
 }
 
 .about__icons {
-  margin-top: 3rem;
+  margin-top: 10rem;
+  margin-bottom: -4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
@@ -241,14 +252,15 @@ h6 {
     width: 50%;
     font-size: 1.8rem;
     margin-top: 0;
+    padding: 2rem 8rem;
     gap: 1.8rem;
-    padding: 1rem 2rem;
-  
   }
 
   .about__icons .icon-container {
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
+    background-color: red;
+    margin: 1.5rem 2rem;
   }
 }
