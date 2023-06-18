@@ -269,3 +269,38 @@ h6 {
     font-size: 1.8rem;
   }
 }
+
+/* ----------------- BRANCH SECTION ----------------- */
+.branch-section h6{
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.branch-wrapper{
+  padding: 0 2rem;
+}
+
+.branch{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.branch .branch__img img{
+ 
+}
+
+.branch .branch__details-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.branch__details{
+  text-align: center;
+}
+
+.branch__details p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
