@@ -21,7 +21,7 @@ html {
 
 body {
   color: var(--color-font);
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
 }
 
 h1 {
@@ -271,36 +271,59 @@ h6 {
 }
 
 /* ----------------- BRANCH SECTION ----------------- */
-.branch-section h6{
+.branch-section{
+  background-color: #fff; 
+}
+
+.branch-section h6 {
   text-align: center;
   margin-top: 2.4rem;
 }
 
-.branch-wrapper{
+.branch-wrapper {
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.branch{
-  border: 1px solid #ccc;
+.branch {
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 8rem;
+  margin-bottom: 1.2rem;
 }
 
-.branch .branch__img img{
- 
+.branch__img {
+  width: 100%;
+}
+
+.branch .branch__img img {
+  width: 100%;
 }
 
 .branch .branch__details-title {
   font-weight: 500;
   font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
-.branch__details{
+.branch__details {
   text-align: center;
+  width: 100%;
+  padding: 0.8rem 0.4rem;
 }
 
 .branch__details p {
   font-size: 1rem;
   opacity: 0.8;
+}
+
+@media screen and (min-width:768px){
+
 }
