@@ -22,6 +22,7 @@ html {
 body {
   color: var(--color-font);
   /* background-color: var(--color-secondary); */
+  min-width: 360px;
 }
 
 h1 {
@@ -271,8 +272,8 @@ h6 {
 }
 
 /* ----------------- BRANCH SECTION ----------------- */
-.branch-section{
-  background-color: #fff; 
+.branch-section {
+  background-color: #fff;
 }
 
 .branch-section h6 {
@@ -297,6 +298,7 @@ h6 {
   overflow: hidden;
   height: 8rem;
   margin-bottom: 1.2rem;
+  width: 318px;
 }
 
 .branch__img {
@@ -324,6 +326,56 @@ h6 {
   opacity: 0.8;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
+  .branch-section {
+    width: 1222px;
+    margin: 0 auto;
+  }
 
+  .branch-section h6{
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .branch-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .branch {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 288px;
+    height:344px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .branch:not(:last-child) {
+    margin-left: 2.4rem;
+  }
+
+  .branch__img{
+    width: 100%;
+    height: 230px;
+  }
+
+  .branch__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .branch__details{
+   padding: 0.8rem 2rem;
+  }
+
+  .branch__details-title{
+    font-size: 2rem;
+  }
+
+  .branch__details p{
+    font-size: 1.4rem;
+  }
 }
