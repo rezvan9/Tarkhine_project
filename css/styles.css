@@ -388,15 +388,143 @@ h6 {
 }
 
 .footer-section .shortcut__header,
-.shortcut__header a {
+.footer__branches .shortcut__header a {
   font-size: 1.2rem;
   text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 .footer-wrapper {
   width: 100%;
-  padding: 2rem 0;
+  padding: 3.2rem 0 8.3rem;
   display: flex;
-  justify-content: space-around;
   color: #fff;
+}
+
+.footer-wrapper ul {
+  list-style: none;
+  line-height: 1.8rem;
+  margin-right: 1rem;
+}
+
+.footer-wrapper a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-wrapper a:hover {
+  color: var(--color-primary);
+}
+
+.socials {
+  margin-top: 0.5rem;
+}
+
+.footer__shortcut .socials img {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.footer__branches {
+  margin-right: 18rem;
+}
+
+.footer__message {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    width: 1222px;
+    margin: 0 auto;
+  }
+
+  .footer-section .shortcut__header,
+  .footer__branches .shortcut__header a,
+  .footer__message p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .footer-wrapper a {
+    font-size: 1.4rem;
+    line-height: 2.52rem;
+    font-weight: 500;
+  }
+
+  .footer__message {
+    display: block;
+    margin-right: 16rem;
+    width: 600px;
+    position: relative;
+  }
+
+  form {
+    display: grid;
+    grid-template-areas:
+      "name textarea"
+      "number textarea"
+      "email textarea";
+    grid-template-columns: 50fr 50fr;
+    gap: 1.2rem 2.6rem;
+  }
+  .footer__form-name {
+    grid-area: name;
+  }
+  .footer__form-num {
+    grid-area: number;
+  }
+  .footer__form-email {
+    grid-area: email;
+  }
+  .footer__form-textarea {
+    grid-area: textarea;
+    border-radius: 4px;
+  }
+
+  .footer__form-name,
+  .footer__form-num,
+  .footer__form-email {
+    border-radius: 4px;
+    width: 27.6rem;
+    height: 4rem;
+    padding: 1rem;
+  }
+
+  .footer__form-textarea {
+    width: 28.6rem;
+    height: 14.4rem;
+    padding: 1rem;
+  }
+
+  .footer__form-name::placeholder,
+  .footer__form-num::placeholder,
+  .footer__form-email::placeholder,
+  .footer__form-textarea::placeholder {
+    opacity: 1;
+  }
+
+  .footer__form-name,
+  .footer__form-num,
+  .footer__form-email,
+  .footer__form-textarea,
+  footer .btn {
+    background: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+    outline: none;
+  }
+
+  footer .btn {
+    font-weight: 500;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 21rem;
+    padding: 0.8rem 1.6rem;
+    width: 18.3rem;
+    cursor: pointer;
+  }
 }
