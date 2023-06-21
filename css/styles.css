@@ -385,6 +385,8 @@ h6 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
     url(/assets/images/footer.svg) no-repeat center;
   background-size: cover;
+  position: absolute;
+  width: 100%;
 }
 
 .footer-section .shortcut__header,
@@ -392,13 +394,15 @@ h6 {
   font-size: 1.2rem;
   text-decoration: none;
   margin-bottom: 1rem;
+
 }
 
 .footer-wrapper {
   width: 100%;
-  padding: 3.2rem 0 8.3rem;
   display: flex;
+  justify-content: space-around;
   color: #fff;
+  padding: 3.2rem 2rem;
 }
 
 .footer-wrapper ul {
@@ -426,18 +430,99 @@ h6 {
   margin-left: 0.2rem;
 }
 
-.footer__branches {
-  margin-right: 18rem;
-}
-
 .footer__message {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media  screen and (min-width:500px) and (max-width: 850px) {
+  .footer-wrapper{
+    justify-content: space-around;
+    padding-bottom: 6rem;
+  }
+
+  .footer__message {
+    display: block;
+    max-width: 300px;
+    position: relative;
+  }
+
+  form {
+    display: grid;
+    grid-template-areas:
+      "name textarea"
+      "number textarea"
+      "email textarea";
+    grid-template-columns: 50fr 50fr;
+    gap: 1.2rem;
+  }
+  .footer__form-name {
+    grid-area: name;
+  }
+  .footer__form-num {
+    grid-area: number;
+  }
+  .footer__form-email {
+    grid-area: email;
+  }
+  .footer__form-textarea {
+    grid-area: textarea;
+    border-radius: 4px;
+  }
+
+  .footer__form-name,
+  .footer__form-num,
+  .footer__form-email {
+    border-radius: 4px;
+    width: 13rem;
+    height: 4rem;
+    padding: 1rem;
+  }
+
+  .footer__form-textarea {
+    width: 13rem;
+    height: 14.4rem;
+    padding: 1rem;
+  }
+
+  .footer__form-name::placeholder,
+  .footer__form-num::placeholder,
+  .footer__form-email::placeholder,
+  .footer__form-textarea::placeholder {
+    opacity: 1;
+  }
+
+  .footer__form-num::placeholder{
+   text-align: right;
+  }
+
+  .footer__form-name,
+  .footer__form-num,
+  .footer__form-email,
+  .footer__form-textarea,
+  footer .btn {
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  footer .btn {
+    font-weight: 500;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 17rem;
+    padding: 0.5rem 1.2rem;
+    width: 8rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 900px){
+  
   .footer-wrapper {
-    width: 1222px;
     margin: 0 auto;
+    padding-bottom: 8.3rem;
   }
 
   .footer-section .shortcut__header,
@@ -456,7 +541,6 @@ h6 {
 
   .footer__message {
     display: block;
-    margin-right: 16rem;
     width: 600px;
     position: relative;
   }
@@ -504,6 +588,10 @@ h6 {
   .footer__form-email::placeholder,
   .footer__form-textarea::placeholder {
     opacity: 1;
+  }
+
+  .footer__form-num::placeholder{
+   text-align: right;
   }
 
   .footer__form-name,
