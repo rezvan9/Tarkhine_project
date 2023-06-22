@@ -394,7 +394,6 @@ h6 {
   font-size: 1.2rem;
   text-decoration: none;
   margin-bottom: 1rem;
-
 }
 
 .footer-wrapper {
@@ -434,8 +433,8 @@ h6 {
   display: none;
 }
 
-@media  screen and (min-width:500px) and (max-width: 850px) {
-  .footer-wrapper{
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  .footer-wrapper {
     justify-content: space-around;
     padding-bottom: 6rem;
   }
@@ -491,8 +490,8 @@ h6 {
     opacity: 1;
   }
 
-  .footer__form-num::placeholder{
-   text-align: right;
+  .footer__form-num::placeholder {
+    text-align: right;
   }
 
   .footer__form-name,
@@ -504,6 +503,7 @@ h6 {
     color: #fff;
     font-size: 1rem;
     outline: none;
+    border: 1px solid #fff;
   }
 
   footer .btn {
@@ -518,8 +518,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 900px){
-  
+@media screen and (min-width: 900px) {
   .footer-wrapper {
     margin: 0 auto;
     padding-bottom: 8.3rem;
@@ -575,12 +574,14 @@ h6 {
     width: 27.6rem;
     height: 4rem;
     padding: 1rem;
+    border: 1px solid #fff;
   }
 
   .footer__form-textarea {
     width: 28.6rem;
     height: 14.4rem;
     padding: 1rem;
+    border: 1px solid #fff;
   }
 
   .footer__form-name::placeholder,
@@ -590,8 +591,8 @@ h6 {
     opacity: 1;
   }
 
-  .footer__form-num::placeholder{
-   text-align: right;
+  .footer__form-num::placeholder {
+    text-align: right;
   }
 
   .footer__form-name,
@@ -614,5 +615,61 @@ h6 {
     padding: 0.8rem 1.6rem;
     width: 18.3rem;
     cursor: pointer;
+  }
+}
+
+/* -------------------- HERO ---------------------- */
+.hero-section {
+  width: 100%;
+  height: 17.6rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
+    url(/assets/images/hero.svg) no-repeat center;
+  background-size: cover;
+}
+
+.hero__wrapper {
+  padding: 0 2rem;
+}
+
+.hero__title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 6rem;
+}
+
+.hero-section .btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.hero-section img {
+  width: 8.2rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    height: 33.6rem;
+    position: relative;
+  }
+
+  .hero__title {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 10rem;
+  }
+
+.hero-section .btn {
+  display: block;
+  margin: 5rem auto;
+  padding: 0.5rem 1.5rem;
+}
+
+  .hero-section img{
+    width: 15.4rem;
+    margin: 5rem auto;
   }
 }
