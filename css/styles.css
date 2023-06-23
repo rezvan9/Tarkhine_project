@@ -66,6 +66,11 @@ h6 {
   padding: 0.5rem 1.6rem;
 }
 
+.btn--primary:hover{
+  cursor: pointer;
+  background-color: #315F41;
+}
+
 .btn--secondary {
   color: var(--color-font);
   background-color: var(--color-secondary);
@@ -650,6 +655,10 @@ h6 {
   margin: 2rem auto;
 }
 
+.slide-icons{
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     height: 33.6rem;
@@ -665,11 +674,33 @@ h6 {
 .hero-section .btn {
   display: block;
   margin: 5rem auto;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem;
+  width: 18.4rem;
+  font-size: 1.4rem;
 }
 
-  .hero-section img{
-    width: 15.4rem;
-    margin: 5rem auto;
-  }
+.hero-section img {
+  width: 15.4rem;
+  display: block;
+  margin: 5.5rem auto;
+}
+
+.slide-icons{
+  display: block;
+  position: absolute;
+}
+
+.slide-icons img{
+  width: 3.2rem;
+}
+
+.slide-right{
+  top: 20%;
+}
+
+.slide-left{
+  left: 2rem;
+  top: 20%;
+}
+
 }
