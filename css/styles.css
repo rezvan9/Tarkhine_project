@@ -763,19 +763,20 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .nav__icons {
   background-color: #e5f2e9;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
   padding: 0.8rem;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .nav__icons img {
-  width: 2.1rem;
+  width: 1.6rem;
 }
 
 .nav__icons:not(:last-child) {
@@ -841,9 +842,12 @@ h6 {
   width: 24px;
   height: 3px;
   background-color: var(--color-primary);
-  margin: 5px 0;
   border-radius: 5px;
   transition: all 0.4s ease-out;
+}
+
+.bar:not(:first-child){
+  margin: 5px 0;
 }
 
 .nav.nav__expanded .bar-one {
