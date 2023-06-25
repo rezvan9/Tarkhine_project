@@ -715,6 +715,9 @@ h6 {
   padding: 1.6rem 2rem;
 }
 
+.nav .logo {
+}
+
 .nav__list {
   width: 100%;
   display: flex;
@@ -763,6 +766,10 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav__search{
+  display: none;
   
 }
 
@@ -790,6 +797,14 @@ h6 {
 
   .nav__toggler {
     display: none;
+  }
+
+  .nav .logo,
+  .nav__icon-container {
+  }
+
+  .nav .logo img {
+    width: 15.5rem;
   }
 
   .nav__list {
@@ -831,6 +846,10 @@ h6 {
   .nav__icons:not(:last-child) {
     margin-left: 1rem;
   }
+
+  .nav__search{
+    display: block;
+  }
 }
 
 /* --------------------- TOGGLER --------------------- */
@@ -846,7 +865,7 @@ h6 {
   transition: all 0.4s ease-out;
 }
 
-.bar:not(:first-child){
+.bar:not(:first-child) {
   margin: 5px 0;
 }
 
