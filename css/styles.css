@@ -715,7 +715,8 @@ h6 {
   padding: 1.6rem 2rem;
 }
 
-.nav .logo {
+.nav .list {
+  order: 2;
 }
 
 .nav__list {
@@ -768,9 +769,8 @@ h6 {
   align-items: center;
 }
 
-.nav__search{
+.nav__search {
   display: none;
-  
 }
 
 .nav__icons {
@@ -799,12 +799,12 @@ h6 {
     display: none;
   }
 
-  .nav .logo,
-  .nav__icon-container {
-  }
-
   .nav .logo img {
     width: 15.5rem;
+  }
+
+  .nav .list {
+    order: 0;
   }
 
   .nav__list {
@@ -847,7 +847,7 @@ h6 {
     margin-left: 1rem;
   }
 
-  .nav__search{
+  .nav__search {
     display: block;
   }
 }
