@@ -21,8 +21,6 @@ html {
 
 body {
   color: var(--color-font);
-  /* background-color: var(--color-secondary); */
-  min-width: 360px;
 }
 
 h1 {
@@ -108,6 +106,10 @@ h6 {
   margin: 0 2rem;
 }
 
+.menu__container{
+  width: 100%;
+}
+
 .menu__search input {
   border-radius: 4px;
   padding: 0.8rem 1.6rem;
@@ -154,7 +156,6 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .menu-section {
-    width: 1222px;
     margin: 0 auto;
   }
   .menu__wrapper {
@@ -640,7 +641,6 @@ h6 {
 .hero__title {
   color: #fff;
   text-align: center;
-  font-size: 1.8rem;
   padding-top: 6rem;
 }
 
@@ -653,7 +653,7 @@ h6 {
 .hero-section img {
   width: 8.2rem;
   display: block;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
 }
 
 .slide-icons {
