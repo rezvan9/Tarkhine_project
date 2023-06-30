@@ -1,7 +1,8 @@
 /* --------------------- RESET ------------------- */
 *,
 *::before,
-*::after {
+*::after,
+input {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -106,16 +107,20 @@ h6 {
   margin: 0 2rem;
 }
 
-.menu__container{
+.menu__container {
   width: 100%;
 }
 
+.menu__search {
+  margin: 0;
+}
+
 .menu__search input {
+  width: 100%;
   border-radius: 4px;
   padding: 0.8rem 1.6rem;
   border: 1px solid var(--color-border);
   background: url(/assets/icons/search-normal.svg) no-repeat 1rem center;
-  width: 100%;
 }
 
 .menu__search input::placeholder {
@@ -152,6 +157,12 @@ h6 {
 .menu__item .btn {
   position: absolute;
   top: 7rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 760px) {
+  .menu__search input {
+    width: 204.2%;
+  }
 }
 
 @media screen and (min-width: 768px) {
