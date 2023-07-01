@@ -107,10 +107,6 @@ h6 {
   margin: 0 2rem;
 }
 
-.menu__container {
-  width: 100%;
-}
-
 .menu__search {
   margin: 0;
 }
@@ -165,7 +161,37 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .menu-section {
+    margin: 0 auto;
+  }
+
+  .menu__search {
+    display: none;
+  }
+  .menu__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid: 2.4rem;
+    margin: 15rem 2rem 2rem;
+    
+  }
+  .menu__item {
+    height: 13rem;
+    justify-content: flex-end;
+  }
+  .menu__item img {
+    width: 17rem;
+    height: 17rem;
+    margin-bottom: 3rem;
+  }
+  .menu__item .btn {
+    width: 15.5rem;
+    position: absolute;
+    top: 11rem;
+  }
+}
+
+@media screen and (min-width: 910px) {
   .menu-section {
     margin: 0 auto;
   }
