@@ -60,6 +60,10 @@ h6 {
   font-weight: 400;
 }
 
+.btn:hover{
+  cursor: pointer;
+}
+
 .btn--primary {
   background-color: var(--color-primary);
   color: #fff;
@@ -67,7 +71,6 @@ h6 {
 }
 
 .btn--primary:hover {
-  cursor: pointer;
   background-color: #315f41;
 }
 
@@ -89,10 +92,15 @@ h6 {
   color: #fff;
   border: 2px solid #fff;
   font-size: 1.2rem;
+  transition: all 0.2ms ease-out;
 }
 
 .btn--tertiary img {
   color: #fff;
+}
+
+.btn--tertiary:hover{
+scale: 1.1;
 }
 
 @media screen and (min-width: 768px) {
@@ -227,6 +235,7 @@ h6 {
   background-size: cover;
   background-position: center;
   position: absolute;
+  margin-top: 4.8rem;
 }
 
 .about-wrapper {
@@ -280,7 +289,6 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10.8rem;
     width: 100%;
   }
 
@@ -304,6 +312,7 @@ h6 {
     margin: 5rem -2rem;
     padding: 0 6rem;
     gap: 1.8rem;
+    background-color: red;
   }
 
   .about__icons .icon-container {
@@ -312,6 +321,9 @@ h6 {
     margin: 1.5rem 0;
     text-align: center;
     font-size: 1.8rem;
+    line-height: 2.7rem;
+    
+
   }
 }
 
