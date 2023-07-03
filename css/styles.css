@@ -234,8 +234,9 @@ scale: 1.1;
     url("/assets/images/out-door-cafe.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  /* position: absolute; */
   margin-top: 4.8rem;
+  padding-bottom: 1rem;
 }
 
 .about-wrapper {
@@ -294,7 +295,6 @@ scale: 1.1;
 
   .about-content {
     width: 50%;
-    margin: 4.8rem 0 2.8rem 6rem;
   }
 
   .about-content h6 {
@@ -312,7 +312,6 @@ scale: 1.1;
     margin: 5rem -2rem;
     padding: 0 6rem;
     gap: 1.8rem;
-    background-color: red;
   }
 
   .about__icons .icon-container {
@@ -322,14 +321,13 @@ scale: 1.1;
     text-align: center;
     font-size: 1.8rem;
     line-height: 2.7rem;
-    
-
   }
 }
 
 /* ----------------- BRANCH SECTION ----------------- */
 .branch-section {
   background-color: #fff;
+  
 }
 
 .branch-section h6 {
@@ -382,7 +380,56 @@ scale: 1.1;
   opacity: 0.8;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
+  .branch-section{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .branch-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .branch {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .branch:not(:last-child) {
+    margin-left: 2.4rem;
+  }
+
+  .branch__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .branch__img img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .branch__details {
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .branch__details-title {
+    font-size: 2rem;
+  }
+
+  .branch__details p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1124px) {
   .branch-section {
     width: 1222px;
     margin: 0 auto;
