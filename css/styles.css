@@ -499,7 +499,6 @@ scale: 1.1;
   background-size: cover;
   position: absolute;
   width: 100%;
-  margin-top: 2rem;
 }
 
 .footer-section .shortcut__header,
@@ -640,6 +639,10 @@ scale: 1.1;
 }
 
 @media screen and (min-width: 900px) {
+  .footer-section{
+  margin-top: 2rem;
+  }
+
   .footer-wrapper {
     margin: 0 auto;
     padding-bottom: 8.3rem;
