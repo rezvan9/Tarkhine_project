@@ -1028,7 +1028,7 @@ h6 {
   gap: 1.6rem;
 }
 
-.about-us__top-desc p{
+.about-us__top-desc  p{
   text-align: justify;
   width: 152px;
 }
@@ -1072,4 +1072,15 @@ h6 {
 .about-us__icons .icon__name{
   color: #717171;
   text-align: center;
+}
+
+@media screen and (min-width:1124px) {
+  .about-us__section h6{
+    font-size: 2.4rem;
+  }
+  
+
+  .about-us__top-desc img{
+  width: 600px;
+}
 }
