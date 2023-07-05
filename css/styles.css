@@ -22,6 +22,7 @@ html {
 
 body {
   color: var(--color-font);
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -60,7 +61,7 @@ h6 {
   font-weight: 400;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
 
@@ -99,8 +100,8 @@ h6 {
   color: #fff;
 }
 
-.btn--tertiary:hover{
-scale: 1.1;
+.btn--tertiary:hover {
+  scale: 1.1;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,7 +164,7 @@ scale: 1.1;
   top: 7rem;
 }
 
-@media screen and (min-width: 500px) and (max-width: 760px) {
+@media screen and (min-width: 510px) and (max-width: 760px) {
   .menu__search input {
     width: 204.2%;
   }
@@ -181,7 +182,6 @@ scale: 1.1;
     grid-template-columns: repeat(4, 1fr);
     grid: 2.4rem;
     margin: 15rem 2rem 2rem;
-    
   }
   .menu__item {
     height: 13rem;
@@ -379,18 +379,18 @@ scale: 1.1;
   opacity: 0.8;
 }
 
-@media screen and (min-width:400px) and (max-width:760px) {
-  .branch{
+@media screen and (min-width: 400px) and (max-width: 760px) {
+  .branch {
     width: 100%;
   }
   .branch__details p {
-  font-size: 1.2rem;
-  opacity: 0.8;
-}
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
 }
 
-@media screen and (min-width:768px) {
-  .branch-section{
+@media screen and (min-width: 768px) {
+  .branch-section {
     width: 100%;
     margin: 0 auto;
   }
@@ -541,8 +541,8 @@ scale: 1.1;
   margin-left: 0.2rem;
 }
 
-.footer__branches{
- width: 50%;
+.footer__branches {
+  width: 50%;
 }
 
 .footer__message {
@@ -555,7 +555,7 @@ scale: 1.1;
     padding-bottom: 6rem;
   }
 
-  .footer__branches{
+  .footer__branches {
     width: auto;
   }
 
@@ -639,8 +639,8 @@ scale: 1.1;
 }
 
 @media screen and (min-width: 900px) {
-  .footer-section{
-  margin-top: 2rem;
+  .footer-section {
+    margin-top: 2rem;
   }
 
   .footer-wrapper {
@@ -663,7 +663,7 @@ scale: 1.1;
     font-weight: 500;
   }
 
-  .footer__branches{
+  .footer__branches {
     width: auto;
   }
 
@@ -1003,4 +1003,42 @@ scale: 1.1;
 
 .nav.nav__expanded .bar-three {
   transform: rotate(45deg) translate(-7px, -3px);
+}
+/* ------------------------------------------------ */
+/* ---------------- About page -------------------- */
+.about-hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/assets/images/about-page-hero.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us__section{
+  margin-top: 1.6rem;
+  padding: 0 2rem;
+}
+
+.about-us__top-desc{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.about-us__top-desc p{
+  text-align: justify;
+  width: 152px;
+}
+
+.about-us__top-desc img{
+  height: 120px;
+}
+
+.about-us__section p{
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
