@@ -1042,3 +1042,34 @@ h6 {
   font-size: 1rem;
   line-height: 1.8rem;
 }
+
+.about-wrapper{
+  background-color: #ededed;
+  margin-top: 1.6rem;
+  padding: 1.2rem 2rem;
+  margin-bottom: 0;
+}
+
+.about-us__icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-us__icons .icon-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  width: 6.8rem;
+}
+
+.about-us__icons .icon-container img{
+  width: 1.6rem;
+  color: var(--color-font);
+}
+
+.about-us__icons .icon__name{
+  color: #717171;
+  text-align: center;
+}
