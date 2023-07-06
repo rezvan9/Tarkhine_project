@@ -564,6 +564,11 @@ h6 {
     max-width: 300px;
     position: relative;
   }
+  .footer__message > p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
 
   form {
     display: grid;
@@ -631,7 +636,7 @@ h6 {
     border: 1px solid #fff;
     position: absolute;
     left: 0;
-    top: 17rem;
+    top: 19rem;
     padding: 0.5rem 1.2rem;
     width: 8rem;
     cursor: pointer;
@@ -1013,50 +1018,51 @@ h6 {
       rgba(0, 0, 0, 0.05) 100%
     ),
     url(/assets/images/about-page-hero.svg) no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
-.about-us__section{
+.about-us__section {
   margin-top: 1.6rem;
   padding: 0 2rem;
 }
 
-.about-us__top-desc{
+.about-us__top-desc {
   display: flex;
   justify-content: space-between;
   gap: 1.6rem;
 }
 
-.about-us__top-desc  p{
+.about-us__top-desc p {
   text-align: justify;
   width: 152px;
 }
 
-.about-us__top-desc img{
+.about-us__top-desc img {
   height: 120px;
 }
 
-.about-us__section p{
+.about-us__section p {
   text-align: justify;
   font-size: 1rem;
   line-height: 1.8rem;
 }
 
-.about-wrapper{
+.about-wrapper {
   background-color: #ededed;
   margin-top: 1.6rem;
   padding: 1.2rem 2rem;
   margin-bottom: 0;
 }
 
-.about-us__icons{
+.about-us__icons {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
 }
 
-.about-us__icons .icon-container{
+.about-us__icons .icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1064,23 +1070,40 @@ h6 {
   width: 6.8rem;
 }
 
-.about-us__icons .icon-container img{
+.about-us__icons .icon-container img {
   width: 1.6rem;
   color: var(--color-font);
 }
 
-.about-us__icons .icon__name{
+.about-us__icons .icon__name {
   color: #717171;
   text-align: center;
 }
 
-@media screen and (min-width:1124px) {
-  .about-us__section h6{
+@media screen and (min-width:610px) and (max-width:900px) {
+  .about-us__icons .icon-container img{
+    width:2.6rem;
+  }
+   .about-us__icons .icon__name {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-us__section h6 {
     font-size: 2.4rem;
   }
-  
-
-  .about-us__top-desc img{
-  width: 600px;
-}
+  .about-wrapper{
+   padding: 1.6rem 0;
+  }
+  .about-us__icons .icon-container{
+    width: 18.4rem;
+    border: 2px solid #cbcbcb;
+  }
+  .about-us__icons .icon-container img {
+    width: 4rem;
+  }
+  .about-us__icons .icon__name {
+    font-size: 1.6rem;
+  }
 }
