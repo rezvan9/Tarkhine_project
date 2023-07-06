@@ -22,3 +22,6 @@ tabs.forEach((tab) => {
     targetTabContent.classList.add("active");
   });
 });
+// --------------------- links --------------------
+
+
