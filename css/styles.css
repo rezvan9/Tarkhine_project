@@ -354,17 +354,20 @@ h6 {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  height: 8rem;
   margin-bottom: 1.2rem;
-  width: 318px;
+  width: 314px;
+  height: 8rem;
 }
 
 .branch__img {
   width: 100%;
+  height: 100%;
 }
 
 .branch .branch__img img {
-  width: 100%;
+  width: 144px;
+  height: 80px;
+  object-fit: cover;
 }
 
 .branch .branch__details-title {
@@ -388,6 +391,11 @@ h6 {
   .branch {
     width: 100%;
   }
+  .branch .branch__img img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
   .branch__details p {
     font-size: 1.2rem;
     opacity: 0.8;
@@ -407,7 +415,7 @@ h6 {
   .branch {
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     border-radius: 8px;
   }
@@ -415,14 +423,14 @@ h6 {
     margin-left: 2.4rem;
   }
 
-  .branch__img {
+  .branch .branch__img {
     width: 100%;
     height: 100%;
   }
 
-  .branch__img img {
+  .branch .branch__img img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
   }
 
