@@ -387,7 +387,7 @@ h6 {
   opacity: 0.8;
 }
 
-@media screen and (min-width: 400px) and (max-width: 760px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
   .branch {
     width: 100%;
   }
@@ -1161,4 +1161,31 @@ h6 {
   .about-us__footer {
     margin-top: 0;
   }
+}
+/* ------------------------------------------------ */
+/* ---------------- Call-us page ------------------*/
+.call-hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/assets/images/find-us.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.call-branch .branch{
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+height: inherit;
+}
+
+.call-branch .branch__img img{
+  width: 100%;
+}
+
+.call-branch .branch__details{
+ 
 }
