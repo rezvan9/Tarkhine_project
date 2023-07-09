@@ -64,6 +64,7 @@ h6 {
   outline: none;
   font-size: 1.4rem;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -107,6 +108,12 @@ h6 {
 
 .btn--tertiary:hover {
   scale: 1.1;
+}
+
+.btn--fourth {
+  color: var(--color-primary);
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -392,10 +399,10 @@ h6 {
     width: 100%;
   }
   .branch .branch__img img {
-  width: 100%;
-  height: 80px;
-  object-fit: cover;
-}
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+  }
   .branch__details p {
     font-size: 1.2rem;
     opacity: 0.8;
@@ -526,7 +533,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding: 3.2rem 2rem;
+  padding: 1.6rem 2rem;
 }
 
 .footer-wrapper ul {
@@ -1175,17 +1182,46 @@ h6 {
   background-position: center;
 }
 
-.call-branch .branch{
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-height: inherit;
+.call-branch{
+  margin-bottom: 0;
 }
 
-.call-branch .branch__img img{
+.call-branch .branch-wrapper {
+  gap: 2.8rem 0;
+}
+
+.call-branch .branch {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
   width: 100%;
 }
 
-.call-branch .branch__details{
- 
+.call-branch .branch__img img {
+  width: 100%;
+  height: 112px;
+}
+
+.call-branch .branch__details {
+  height: 100%;
+}
+
+.branch__buttons {
+  margin: 1.2rem 0 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.branch__buttons .btn {
+  display: inline-block;
+  width: 120px;
+  padding: 2px 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-section.call-footer{
+  margin-top: 2.4rem;
 }
