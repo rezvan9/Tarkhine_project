@@ -1245,13 +1245,14 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4.8rem;
+    margin: 4.8rem 2rem 0;
   }
   .call-branch .branch {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 280px;
+    margin: 0;
   }
 
   .call-branch .branch__img {
