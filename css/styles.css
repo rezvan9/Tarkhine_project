@@ -1283,18 +1283,29 @@ h6 {
     display: flex;
   }
 
-  .call-branch .icon-hover {
+  .call-branch .icon-wrapper {
     width: 92px;
     height: 92px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .call-branch .icon-hover {
+    width: 74px;
+    height: 74px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .call-branch .icon-hover,
+  .call-branch .icon-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    filter: brightness(40);
-    border: 1px solid #fff;
     border-radius: 100%;
+    filter: brightness(70);
   }
+
   .call-branch .overlay img {
     width: 54px;
     height: 54px;
@@ -1303,6 +1314,7 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .call-branch .branch__details-title {
     font-size: 2rem;
     margin: 2.4rem 0 3.2rem;
