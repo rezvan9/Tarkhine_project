@@ -1336,3 +1336,14 @@ h6 {
     width: 130px;
   }
 }
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  .call-branch .branch__details-title {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem; 
+  }
+  .call-branch .branch__details p {
+    font-size: 1.6rem;
+    margin:0 1rem;
+  }
+}
