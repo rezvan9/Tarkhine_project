@@ -52,9 +52,14 @@ h6 {
   margin-bottom: 4rem;
 }
 
-.active a {
+.active {
   color: var(--color-primary);
   text-decoration: underline;
+}
+
+.my-signature {
+  color: #fff;
+  margin: 0 2rem;
 }
 
 /* ------------------- BUTTONS ----------------- */
@@ -218,17 +223,19 @@ h6 {
 
 @media screen and (min-width: 910px) {
   .menu-section {
-    margin: 0 auto;
+    margin: 0 2rem;
   }
   .menu__wrapper {
+    max-width: 1222px;
     grid-template-columns: repeat(4, 1fr);
-    grid: 2.4rem;
+    gap: 2.4rem;
     margin-top: 15rem;
   }
   .menu__search {
     display: none;
   }
   .menu__item {
+    width: auto;
     height: 16rem;
     justify-content: flex-end;
   }
@@ -1338,13 +1345,13 @@ h6 {
   }
 }
 
-@media screen and (min-width:600px) and (max-width:900px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .call-branch .branch__details-title {
     font-size: 1.8rem;
-    margin: 2rem 0 1rem; 
+    margin: 2rem 0 1rem;
   }
   .call-branch .branch__details p {
     font-size: 1.6rem;
-    margin:0 1rem;
+    margin: 0 1rem;
   }
 }
