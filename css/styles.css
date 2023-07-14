@@ -1351,15 +1351,27 @@ h6 {
     font-size: 1.8rem;
     margin: 0;
   }
-  .call-branch .branch__details{
+  .call-branch .branch__details {
     margin-top: 1rem;
   }
   .call-branch .branch__details p {
     font-size: 1.6rem;
     margin-top: 1rem;
   }
-  .call-branch .branch__details:hover .branch__buttons{
+  .call-branch .branch__details:hover .branch__buttons {
     margin-top: 1.8rem;
-    gap:0 1rem;
+    gap: 0 1rem;
   }
+}
+/* --------------------------------------------------- */
+/* ----------------- Deputize section --------------- */
+.deputize-hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/assets/images/deputize-hero.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
