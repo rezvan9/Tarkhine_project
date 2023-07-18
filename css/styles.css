@@ -1494,7 +1494,6 @@ hr {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1.6rem;
-  margin-bottom: 4.8rem;
 }
 
 .form__address form{
@@ -1516,3 +1515,7 @@ hr {
   height: 138px;
   border-radius: 4px;
 }
+
+
+
+

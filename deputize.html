@@ -126,13 +126,44 @@
             <form>
               <input type="text" placeholder="استان" />
               <input type="text" placeholder="شهر" />
-              <input type="text" placeholder="منطقه"  class="area"/>
+              <input type="text" placeholder="منطقه" class="area" />
               <textarea cols="30" rows="2" placeholder="آدرس دقیق"></textarea>
             </form>
           </div>
           <span class="form__map"
             ><img src="/assets/images/form-map.svg" alt=""
           /></span>
+        </div>
+        <p>مشخصات ملک متقاضی</p>
+        <form>
+          <input type="text" placeholder="نوع مالکیت" />
+          <input type="tel" placeholder="مساحت بنا(مترمربع)" />
+          <input type="number" placeholder="سن بنا" />
+        </form>
+        <!-- --------------------- -->
+        <p>امکانات ملک متقاضی</p>
+        <span>ملک متقاضی:</span>
+        <div class="form__details">
+          <div class="form__check">
+            <form>
+              <span>
+                <input type="checkbox" name="License" id="License" />
+                <label for="License">پروانه کسب دارد.</label>
+                <input type="checkbox" name="parking" id="parking" />
+                <label for="parking">پارکینگ دارد.</label>
+              </span>
+              <span>
+                <input type="checkbox" name="kitchen" id="kitchen" />
+                <label for="kitchen">آشپزخانه دارد.</label>
+                <input type="checkbox" name="store" id="store" />
+                <label for="store">انبار دارد.</label>
+              </span>
+            </form>
+          </div>
+          <div class="form__img">
+            <span>تصاویر ملک</span>
+            <img src="/assets/icons/singles/folder-add.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
