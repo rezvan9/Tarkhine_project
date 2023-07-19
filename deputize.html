@@ -142,29 +142,31 @@
         </form>
         <!-- --------------------- -->
         <p>امکانات ملک متقاضی</p>
-        <span>ملک متقاضی:</span>
+        <span class="details__title">ملک متقاضی:</span>
         <div class="form__details">
           <div class="form__check">
-            <form>
-              <span>
-                <input type="checkbox" name="License" id="License" />
-                <label for="License">پروانه کسب دارد.</label>
-                <input type="checkbox" name="parking" id="parking" />
-                <label for="parking">پارکینگ دارد.</label>
-              </span>
-              <span>
-                <input type="checkbox" name="kitchen" id="kitchen" />
-                <label for="kitchen">آشپزخانه دارد.</label>
-                <input type="checkbox" name="store" id="store" />
-                <label for="store">انبار دارد.</label>
-              </span>
-            </form>
+            <span>
+              <input type="checkbox" name="License" id="License" />
+              <label for="License">پروانه کسب دارد.</label>
+              <input type="checkbox" name="parking" id="parking" />
+              <label for="parking">پارکینگ دارد.</label>
+            </span>
+            <span>
+              <input type="checkbox" name="kitchen" id="kitchen" />
+              <label for="kitchen">آشپزخانه دارد.</label>
+              <input type="checkbox" name="store" id="store" />
+              <label for="store">انبار دارد.</label>
+            </span>
           </div>
-          <div class="form__img">
+          <div class="form__img-container">
             <span>تصاویر ملک</span>
-            <img src="/assets/icons/singles/folder-add.svg" alt="" />
+            <div class="form__img">
+              <img src="/assets/icons/singles/folder-add.svg" alt="" />
+              <span>تصاویری از ملک را بارگذاری کنید...</span>
+            </div>
           </div>
         </div>
+        <input type="submit" class="btn btn--primary" value="ثبت اطلاعات">
       </div>
     </section>
     <!-- ----------- footer section --------- -->
