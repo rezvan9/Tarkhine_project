@@ -22,6 +22,6 @@
 body,
 button,
 form input,
-form textarea {
+form textarea, a {
   font-family: "Estedad";
 }

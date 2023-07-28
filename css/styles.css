@@ -951,18 +951,13 @@ h6 {
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .nav {
-    padding: 2rem;
     flex-wrap: nowrap;
   }
 
   .nav__toggler {
     display: none;
-  }
-
-  .nav .logo img {
-    width: 15.5rem;
   }
 
   .nav .list {
@@ -995,6 +990,15 @@ h6 {
     margin-right: 0.3rem;
   }
 
+  .nav__search {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav .logo img {
+    width: 15.5rem;
+  }
   .nav__icons {
     background-color: #e5f2e9;
     width: 4rem;
@@ -1007,10 +1011,6 @@ h6 {
 
   .nav__icons:not(:last-child) {
     margin-left: 1rem;
-  }
-
-  .nav__search {
-    display: block;
   }
 }
 
@@ -1043,6 +1043,13 @@ h6 {
 
 .nav.nav__expanded .bar-three {
   transform: rotate(45deg) translate(-7px, -3px);
+}
+
+@media screen and (min-width:768px) {
+  .bar{
+    width: 34px;
+    height: 4px;
+  }
 }
 /* ------------------------------------------------ */
 /* ---------------- About-us page ------------------*/
@@ -1592,23 +1599,20 @@ textarea {
     padding-right: 3rem;
   }
 
+  .get-advice,
   .apply-form .get-advice {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 1.6rem;
   }
 
-  .apply-form .get-advice input {
+  .apply-form .get-advice input,
+  .get-advice input {
     font-size: 1.3rem;
-    width: auto;
   }
 
-  /* .apply-form .get-advice input:not(:last-child) {
-    margin: 2.4rem 0 0;
-  } */
-
   .get-advice .btn {
-    display: block;
+    grid-column: span 3;
     margin: 2.4rem auto;
   }
 
