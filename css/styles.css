@@ -1738,7 +1738,7 @@ textarea {
 
 /* --------------------------------------------------- */
 /* ------------------- BRANCH PAGE ------------------ */
-.branch-hero{
+.branch-hero {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.05) 0%,
@@ -1749,26 +1749,37 @@ textarea {
   background-position: center;
 }
 
-.branch__container{
+.branch__container {
   padding: 0 2rem;
 }
 
-.branch__container .menu__search{
+.branch__container .menu__search {
   margin-bottom: 2.4rem;
 }
 /* ---------------- offer-card --------------- */
-.branch__special-offers .offer-card p{
-font-size: 1.2rem;
-text-align: center;
-margin: 0.4rem 0;
+.branch__special-offers p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.4rem 0;
 }
 
-.offer-card{
+.offer-card {
   border: 1px solid var(--color-border);
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.offer-card img{
+.offer-card img {
   width: 100%;
+}
+
+.offer-card .btn{
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin: 1.2rem 0.8rem 0.8rem;
+  align-self: stretch;
 }
