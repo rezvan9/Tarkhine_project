@@ -1045,8 +1045,8 @@ h6 {
   transform: rotate(45deg) translate(-7px, -3px);
 }
 
-@media screen and (min-width:768px) {
-  .bar{
+@media screen and (min-width: 768px) {
+  .bar {
     width: 34px;
     height: 4px;
   }
@@ -1474,6 +1474,7 @@ hr {
   text-align: center;
   width: 18rem;
   margin: 1.2rem;
+  font-weight: bold;
 }
 
 /* ---------------- apply form ----------------*/
@@ -1548,31 +1549,31 @@ textarea {
   margin: 0.8rem 0.5rem;
 }
 
-.form__img-container{
+.form__img-container {
   margin-top: 3rem;
   width: 100%;
 }
 
 .form__img {
-    border: 2px solid var(--color-border);
-    border-radius: 4px;
-    padding: 4.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.4rem 0 1.6rem;
-  }
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.4rem 0 1.6rem;
+}
 
-  .form__img img{
-    width: 38px;
-  }
+.form__img img {
+  width: 38px;
+}
 
-  .apply-form .btn {
-    display: block;
-    margin: 0 auto 3.2rem;
-    font-family: "vazir";
-    width: 16rem;
-  }
+.apply-form .btn {
+  display: block;
+  margin: 0 auto 3.2rem;
+  font-family: "vazir";
+  width: 16rem;
+}
 
 @media screen and (min-width: 950px) {
   .deputize__features {
@@ -1682,8 +1683,9 @@ textarea {
   .form__map {
     margin-top: 2.4rem;
   }
-  
-  .details__title {
+
+  .details__title,
+  .form__img-container .details__title {
     font-size: 1.6rem;
   }
 
@@ -1708,16 +1710,15 @@ textarea {
 
   .form__check input {
     width: 1.6rem;
-    margin-top: 0.8rem;
   }
 
   .form__check label {
     margin-left: 7.7rem;
     margin-right: -7rem;
-    margin-top: 0.8rem;
+    margin-top: 0.3rem;
   }
 
-  .form__img-container{
+  .form__img-container {
     width: auto;
   }
 
@@ -1735,4 +1736,29 @@ textarea {
   }
 }
 
+/* --------------------------------------------------- */
+/* ------------------- BRANCH PAGE ------------------ */
+.branch-hero{
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/assets/images/branch-hero.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.branch__container{
+  padding: 0 2rem;
+}
+
+.branch__container .menu__search{
+  margin-bottom: 2.4rem;
+}
+/* ---------------- offer-card --------------- */
+.branch__special-offers .offer-card p{
+font-size: 1.2rem;
+text-align: center;
+margin: 0.4rem 0;
+}
