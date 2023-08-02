@@ -1757,10 +1757,22 @@ textarea {
   margin-bottom: 2.4rem;
 }
 /* ---------------- offer-card --------------- */
+.branch__special-offers {
+  margin-bottom: 2.4rem;
+}
+
 .branch__special-offers p {
   font-size: 1.2rem;
   text-align: center;
   margin: 0.4rem 0;
+}
+
+.branch__offer-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  overflow: auto;
 }
 
 .offer-card {
@@ -1771,6 +1783,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 168px;
 }
 
 .offer-card img {
@@ -1785,25 +1798,32 @@ textarea {
   padding: 0 0.8rem;
 }
 
-.card__icons{
+.card__icons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.card__icons img{
+.card__icons img {
   width: 16px;
 }
 
-.card__price{
+.card__likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.card__price {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.old-price{
+.old-price {
   text-decoration: line-through;
   color: #adadad;
 }
