@@ -1777,9 +1777,47 @@ textarea {
   width: 100%;
 }
 
-.offer-card .btn{
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.8rem;
+}
+
+.card__icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__icons img{
+  width: 16px;
+}
+
+.card__price{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.old-price{
+  text-decoration: line-through;
+  color: #adadad;
+}
+
+.offer-card .btn {
   font-size: 1rem;
   padding: 0.8rem;
   margin: 1.2rem 0.8rem 0.8rem;
   align-self: stretch;
+}
+/* -------------------- badge -------------------- */
+.badge {
+  color: #c30000;
+  background-color: #fff2f2;
+  padding: 0 0.8rem;
+  border-radius: 8px;
 }
