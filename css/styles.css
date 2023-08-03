@@ -1757,11 +1757,7 @@ textarea {
   margin-bottom: 2.4rem;
 }
 /* ---------------- offer-card --------------- */
-.branch__special-offers {
-  margin-bottom: 2.4rem;
-}
-
-.branch__special-offers p {
+.branch__offer-cards p {
   font-size: 1.2rem;
   text-align: center;
   margin: 0.4rem 0;
@@ -1781,6 +1777,7 @@ textarea {
 }
 
 .offer-card {
+  background-color: #fff;
   border: 1px solid var(--color-border);
   border-radius: 4px;
   display: flex;
@@ -1788,11 +1785,13 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2.4rem;
 }
 
 .offer-card img {
   width: 100%;
   border-radius: 4px 4px 0 0;
+  object-fit: cover;
 }
 
 .card-details {
@@ -1846,3 +1845,35 @@ textarea {
   padding: 0 0.8rem;
   border-radius: 8px;
 }
+/* ------------------- branch faves ------------- */
+.branch__fave-foods{
+  background-color: var(--color-primary);
+}
+
+.branch__fave-foods h6{
+  color: #fff;
+  padding: 1.2rem 2rem;
+  margin-bottom: 0;
+}
+
+.branch__faves{
+  padding: 0 2rem;
+}
+/* ----------------- foreign foods ------------- */
+.branch__foreign-foods{
+  padding: 0 2rem;
+  margin-top: 2.4rem;
+}
+
+.branch__foreign-foods .offer-card{
+  margin-bottom: 0;
+}
+
+.branch__foreign-foods .btn--fourth{
+  font-size: 1.2rem;
+  display: flex;
+  padding: 0.8rem;
+  width: 13.6rem;
+  margin: 1.2rem auto 2.4rem;
+}
+
