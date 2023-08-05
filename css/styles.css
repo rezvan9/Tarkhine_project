@@ -1832,11 +1832,28 @@ textarea {
   color: #adadad;
 }
 
-.offer-card .btn {
+.branch__foreign-foods .btn {
   font-size: 1rem;
   padding: 0.8rem;
   margin: 1.2rem 0.8rem 0.8rem;
   align-self: stretch;
+}
+
+.branch__foreign-foods .note-icon {
+  padding-left: 0.33rem;
+}
+
+.branch__foreign-foods .btn .note-icon-white {
+  display: none;
+}
+
+.branch__foreign-foods .btn:hover .note-icon {
+  display: none;
+}
+
+.branch__foreign-foods .btn:hover .note-icon-white {
+  display: block;
+  padding-left: 0.33rem;
 }
 /* -------------------- badge -------------------- */
 .badge {
@@ -1846,34 +1863,42 @@ textarea {
   border-radius: 8px;
 }
 /* ------------------- branch faves ------------- */
-.branch__fave-foods{
+.branch__fave-foods {
   background-color: var(--color-primary);
 }
 
-.branch__fave-foods h6{
+.branch__fave-foods h6 {
   color: #fff;
   padding: 1.2rem 2rem;
   margin-bottom: 0;
 }
 
-.branch__faves{
+.branch__faves {
   padding: 0 2rem;
 }
 /* ----------------- foreign foods ------------- */
-.branch__foreign-foods{
+.branch__foreign-foods {
   padding: 0 2rem;
   margin-top: 2.4rem;
 }
 
-.branch__foreign-foods .offer-card{
+.branch__foreign-foods .offer-card {
   margin-bottom: 0;
 }
 
-.branch__foreign-foods .btn--fourth{
+.branch__foreign-foods .btn--fourth {
   font-size: 1.2rem;
   display: flex;
   padding: 0.8rem;
   width: 13.6rem;
   margin: 1.2rem auto 2.4rem;
 }
+/* ----------------- branch address -------------- */
+.branch__address-wrapper h6 {
+  margin: 2.4rem auto 1.2rem;
+  text-align: center;
+}
 
+.branch__hero-img{
+  width: 100%;
+}
