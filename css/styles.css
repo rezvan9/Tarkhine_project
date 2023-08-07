@@ -1750,11 +1750,12 @@ textarea {
 }
 
 .branch__container {
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
 }
 
 .branch__container .menu__search {
   margin-bottom: 2.4rem;
+  padding-left: 2rem;
 }
 /* ---------------- offer-card --------------- */
 .branch__offer-cards p {
@@ -1769,7 +1770,7 @@ textarea {
   align-items: center;
   gap: 1.6rem;
   overflow-x: auto;
-  /* white-space: nowrap; */
+  padding: 0;
 }
 
 .branch__offer-cards::-webkit-scrollbar {
@@ -1878,7 +1879,7 @@ textarea {
 }
 /* ----------------- foreign foods ------------- */
 .branch__foreign-foods {
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
   margin-top: 2.4rem;
 }
 
