@@ -1943,6 +1943,10 @@ textarea {
   align-items: center;
 }
 /* ----------------- comment section ------------- */
+.comment-section{
+  margin-bottom: 2.4rem;
+}
+
 .comment-section h6{
   text-align: center;
   margin-bottom: 1.2rem;
@@ -1950,6 +1954,11 @@ textarea {
 
 .comment__wrapper{
   padding: 0 2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  overflow-x: auto;
 }
 
 .comment__card{
@@ -1958,10 +1967,34 @@ textarea {
   padding: 2rem 1.6rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 0.8rem;
+  position: relative;
+  min-width: 252px;
+}
+
+.comment__id{
+  color: #717171;
+  width: 7.6rem;
+  margin-top: 0.5rem;
 }
 
 .comment__card p{
   font-size: 1rem;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+.comment__rate{
+  position: absolute;
+  left: 0;
+  bottom: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0.8rem 1.6rem;
+}
+
+.comment__rate img{
+  width: 12px;
 }
