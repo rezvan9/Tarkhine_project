@@ -1020,6 +1020,12 @@ h6 {
   }
 }
 
+@media screen and (min-width:1024px){
+  .nav{
+    padding: 1.6rem 0;
+  }
+}
+
 /* --------------------- TOGGLER --------------------- */
 .nav__toggler {
   cursor: pointer;
