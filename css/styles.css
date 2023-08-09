@@ -52,6 +52,12 @@ h6 {
   margin: 0 auto;
 }
 
+.container-scorll {
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 0 10.8rem 0 0;
+}
+
 .block {
   margin-bottom: 4rem;
 }
@@ -1833,7 +1839,7 @@ textarea {
   color: #adadad;
 }
 
-.offer-card .btn{
+.offer-card .btn {
   font-size: 1rem;
   padding: 0.8rem;
   margin: 1.2rem 0.8rem 0.8rem;
@@ -1914,7 +1920,7 @@ textarea {
 }
 
 .branch__address {
- background-color: #fff;
+  background-color: #fff;
   margin: 0 2rem;
   padding: 0.8rem;
   border: 1px solid var(--color-primary);
@@ -1943,16 +1949,16 @@ textarea {
   align-items: center;
 }
 /* ----------------- comment section ------------- */
-.comment-section{
+.comment-section {
   margin-bottom: 2.4rem;
 }
 
-.comment-section h6{
+.comment-section h6 {
   text-align: center;
   margin-bottom: 1.2rem;
 }
 
-.comment__wrapper{
+.comment__wrapper {
   padding: 0 2rem 0 0;
   display: flex;
   justify-content: space-between;
@@ -1961,7 +1967,7 @@ textarea {
   overflow-x: auto;
 }
 
-.comment__card{
+.comment__card {
   border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 2rem 1.6rem;
@@ -1972,19 +1978,19 @@ textarea {
   min-width: 252px;
 }
 
-.comment__id{
+.comment__id {
   color: #717171;
   width: 7.6rem;
   margin-top: 0.5rem;
 }
 
-.comment__card p{
+.comment__card p {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.8rem;
 }
 
-.comment__rate{
+.comment__rate {
   position: absolute;
   left: 0;
   bottom: 0.7rem;
@@ -1995,6 +2001,36 @@ textarea {
   padding: 0.8rem 1.6rem;
 }
 
-.comment__rate img{
+.comment__rate img {
   width: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .branch__title h6:not(.branch__fave-foods h6) {
+    font-size: 2.4rem;
+    margin-top: 4.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .branch__fave-foods h6 {
+    padding: 2.4rem;
+    font-size: 2.4rem;
+  }
+
+  .branch__address-wrapper.branch__title h6,
+  .comment-section.branch__title h6 {
+    margin-bottom: 1.8rem !important;
+  }
+
+  .branch__offer-cards {
+    gap: 2.4rem;
+  }
+
+  .offer-card {
+    flex: 0 0 288px;
+  }
+
+  .offer-card p {
+    font-size: 2rem;
+  }
 }
