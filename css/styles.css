@@ -72,6 +72,9 @@ h6 {
   margin: 0 2rem;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
 /* ------------------- BUTTONS ----------------- */
 .btn {
   border-radius: 4px;
@@ -1020,8 +1023,8 @@ h6 {
   }
 }
 
-@media screen and (min-width:1024px){
-  .nav{
+@media screen and (min-width: 1024px) {
+  .nav {
     padding: 1.6rem 0;
   }
 }
@@ -1826,6 +1829,11 @@ textarea {
   width: 16px;
 }
 
+.add-to-faves p,
+.card__likes p {
+  display: none;
+}
+
 .card__likes {
   display: flex;
   justify-content: space-between;
@@ -2034,9 +2042,48 @@ textarea {
 
   .offer-card {
     flex: 0 0 288px;
+    border-radius: 8px;
+  }
+
+  .offer-card img {
+    border-radius: 8px 8px 0 0;
   }
 
   .offer-card p {
     font-size: 2rem;
   }
+
+  .add-to-faves, .card__likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .add-to-faves p, .card__likes p {
+    font-size: 1rem;
+    color: #adadad;
+    display: block;
+  }
+
+  .card__likes strong{
+    font-weight: 500;
+    color: var(--color-font);
+    font-size: 1.4rem;
+    margin-left: 0.4rem;
+  }
+
+  .card__price {
+   align-items: flex-end;
+  }
+
+  .new-price{
+    font-size: 1.6rem;
+  }
+
+  .offer-card .btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
 }
