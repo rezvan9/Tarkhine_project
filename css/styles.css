@@ -998,10 +998,6 @@ h6 {
     margin-top: 1rem;
     margin-right: 0.3rem;
   }
-
-  .nav__search {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1020,6 +1016,10 @@ h6 {
 
   .nav__icons:not(:last-child) {
     margin-left: 1rem;
+  }
+
+  .nav__search {
+    display: block;
   }
 }
 
