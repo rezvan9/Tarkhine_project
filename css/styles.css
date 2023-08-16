@@ -2236,3 +2236,39 @@ textarea {
     font-size: 1.6rem;
   }
 }
+/* ------------------------------------------------ */
+/* ------------------- MENU PAGE ----------------- */
+.food-card__wrapper{
+  display: grid;
+  grid-template-rows: repeat(12,1fr);
+  gap: 1.2rem;
+  width: 360px;
+  padding: 0 2rem;
+}
+
+.food-card{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  /* height: 100px; */
+}
+
+.food-card img{
+  object-fit: cover;
+  /* width: 92px; */
+}
+
+.food-card__details{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  padding: 0.8rem;
+}
+
+.food-card .btn{
+  font-size: 1rem;
+  padding: 0.8rem;
+  /* width: 84px; */
+}
