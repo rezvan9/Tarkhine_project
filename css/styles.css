@@ -1927,6 +1927,7 @@ textarea {
   .btn-wrapper .btn--fourth {
     width: 184px;
     margin: 2.4rem auto 4.8rem;
+    font-size: 1.6rem;
   }
 }
 /* ----------------- branch address -------------- */
@@ -2149,7 +2150,7 @@ textarea {
     font-size: 1.4rem;
   }
 
-   .branch__address span {
+  .branch__address span {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -2157,7 +2158,7 @@ textarea {
     text-align: center;
   }
 
-  .branch__address img{
+  .branch__address img {
     width: 24px;
     height: 24px;
   }
@@ -2166,9 +2167,33 @@ textarea {
     grid-column: span 1;
   }
 
-  .comment__card p{
+  .comment__card {
+    border-radius: 8px;
+    min-width: 400px;
+    gap: 1.3rem;
+  }
+
+  .comment__avatar img {
+    width: 88px;
+  }
+
+  .comment-section .comment__id {
+    font-size: 1.2rem;
+    width: 100px;
+  }
+
+  .comment__card p {
     font-size: 1.4rem;
     line-height: 26px;
+    align-self: center;
+  }
+
+  .comment__rate img{
+    width: 16px;
+  }
+
+  .comment__rate{
+    font-size: 1.4rem;
   }
 }
 
@@ -2185,27 +2210,29 @@ textarea {
     height: 32px;
   }
 
-  .comment__card{
+  .comment__wrapper {
+    gap: 2.4rem;
+  }
+
+  .comment__card {
     min-width: 500px;
     padding: 2.4rem 3.2rem;
   }
 
-  .comment__avatar img{
+  .comment__avatar img {
     width: 96px;
   }
 
-  .comment-section .comment__id{
+  .comment-section .comment__id {
     font-size: 1.4rem;
-    width: 114px;
-  }
-  
-  .comment-section p{
-    font-size: 1.6rem;
-    line-height: 28.8px;
-    align-self: center;
   }
 
-  .comment__rate img{
-    width: 16px;
+  .comment-section p {
+    font-size: 1.6rem;
+    line-height: 28.8px;
+  }
+
+  .comment__rate {
+    font-size: 1.6rem;
   }
 }
