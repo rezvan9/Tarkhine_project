@@ -2165,6 +2165,11 @@ textarea {
   .address-location {
     grid-column: span 1;
   }
+
+  .comment__card p{
+    font-size: 1.4rem;
+    line-height: 26px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -2178,5 +2183,29 @@ textarea {
   .branch__address img {
     width: 32px;
     height: 32px;
+  }
+
+  .comment__card{
+    min-width: 500px;
+    padding: 2.4rem 3.2rem;
+  }
+
+  .comment__avatar img{
+    width: 96px;
+  }
+
+  .comment-section .comment__id{
+    font-size: 1.4rem;
+    width: 114px;
+  }
+  
+  .comment-section p{
+    font-size: 1.6rem;
+    line-height: 28.8px;
+    align-self: center;
+  }
+
+  .comment__rate img{
+    width: 16px;
   }
 }
