@@ -2238,6 +2238,21 @@ textarea {
 }
 /* ------------------------------------------------ */
 /* ------------------- MENU PAGE ----------------- */
+.menu-hero{
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/assets/images/menu-hero.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-hero .slide-icons{
+  display: none;
+}
+
 .menu__persian-foods{
   padding: 0 2rem;
 }
