@@ -2294,6 +2294,9 @@ textarea {
 
 .off-price {
   justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .food-card .new-price {
