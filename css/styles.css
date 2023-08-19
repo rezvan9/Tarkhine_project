@@ -46,6 +46,10 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* -------------------PAGE SETTINGS ------------ */
 .container {
   max-width: 1222px;
@@ -2261,6 +2265,38 @@ textarea {
  left: 36%;
 }
 
+/* ------------------ tab section ------------------- */
+.tab-section{
+  background-color: #ededed;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.tab__container{
+  padding: 0.6rem 2rem 0.5rem;
+}
+
+.tab__container ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+  transition: all 0.3ms ease-out;
+}
+
+.tab__item a{
+  color: #717171;
+}
+
+.tab-section .tab__item a:hover{
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+  /* border-bottom: 1px solid var(--color-primary); */
+ 
+}
+/* ----------------- food section ------------------- */
 .menu__persian-foods{
   padding: 0 2rem;
 }
@@ -2336,5 +2372,5 @@ textarea {
   width: 100px;
   height: 32px;
 }
-
+/* ----------------------  */
 
