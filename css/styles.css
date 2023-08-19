@@ -2247,18 +2247,18 @@ textarea {
     url(/assets/images/menu-hero.svg) no-repeat;
   background-size: cover;
   background-position: center;
-  /* position: relative; */
+  position: relative;
 }
 
 .menu-hero .slide-icons{
   display: none;
 }
 
-.hero-slide-group{
- /* position: absolute;
- top: 77%;
- bottom: 0;
- right: 36%; */
+.hero__slide-group{
+ position: absolute;
+ top: 76%;
+ right: 36%;
+ left: 36%;
 }
 
 .menu__persian-foods{
@@ -2337,8 +2337,4 @@ textarea {
   height: 32px;
 }
 
-@media screen and (max-width:320px) {
-  .menu-hero .hero__title{
-    font-size: 1.4rem;
-  }
-}
+
