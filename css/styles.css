@@ -46,6 +46,10 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+ul{
+  list-style: none;
+}
+
 a{
   text-decoration: none;
 }
@@ -565,7 +569,6 @@ a{
 }
 
 .footer-wrapper ul {
-  list-style: none;
   line-height: 1.8rem;
   margin-right: 1rem;
 }
@@ -2252,6 +2255,7 @@ textarea {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-bottom: 0;
 }
 
 .menu-hero .slide-icons{
@@ -2260,7 +2264,7 @@ textarea {
 
 .hero__slide-group{
  position: absolute;
- top: 76%;
+ top: 77%;
  right: 36%;
  left: 36%;
 }
@@ -2270,14 +2274,14 @@ textarea {
   background-color: #ededed;
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
+  height: 40px;
 }
 
 .tab__container{
-  padding: 0.6rem 2rem 0.5rem;
+  padding: 0.6rem 2rem;
 }
 
 .tab__container ul{
-  list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -2287,14 +2291,20 @@ textarea {
 
 .tab__item a{
   color: #717171;
+  /* padding: 0.2rem 0; */
 }
 
 .tab-section .tab__item a:hover{
   color: var(--color-primary);
   font-size: 1.4rem;
   font-weight: 500;
-  /* border-bottom: 1px solid var(--color-primary); */
- 
+  border-bottom: 1px solid var(--color-primary);
+}
+
+/* -------------------- sub list -------------------- */
+.sub-list__wrapper{
+  /* display: none; */
+  padding: 0 2rem;
 }
 /* ----------------- food section ------------------- */
 .menu__persian-foods{
