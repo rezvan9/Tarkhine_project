@@ -46,11 +46,11 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -2245,7 +2245,7 @@ textarea {
 }
 /* ------------------------------------------------ */
 /* ------------------- MENU PAGE ----------------- */
-.menu-hero{
+.menu-hero {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.05) 0%,
@@ -2258,30 +2258,30 @@ textarea {
   margin-bottom: 0;
 }
 
-.menu-hero .slide-icons{
+.menu-hero .slide-icons {
   display: none;
 }
 
-.hero__slide-group{
- position: absolute;
- top: 77%;
- right: 36%;
- left: 36%;
+.hero__slide-group {
+  position: absolute;
+  top: 76.2%;
+  right: 36%;
+  left: 36%;
 }
 
 /* ------------------ tab section ------------------- */
-.tab-section{
+.tab-section {
   background-color: #ededed;
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
   height: 40px;
 }
 
-.tab__container{
+.tab__container {
   padding: 0.6rem 2rem;
 }
 
-.tab__container ul{
+.tab__container ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -2289,12 +2289,12 @@ textarea {
   transition: all 0.3ms ease-out;
 }
 
-.tab__item a{
+.tab__item a {
   color: #717171;
   /* padding: 0.2rem 0; */
 }
 
-.tab-section .tab__item a:hover{
+.tab-section .tab__item a:hover {
   color: var(--color-primary);
   font-size: 1.4rem;
   font-weight: 500;
@@ -2302,16 +2302,81 @@ textarea {
 }
 
 /* -------------------- sub list -------------------- */
-.sub-list__wrapper{
+.sub-list__wrapper {
   /* display: none; */
-  padding: 0 2rem;
-}
-/* ----------------- food section ------------------- */
-.menu__persian-foods{
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
-.menu__persian-foods h6{
+.sub-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.sub__item {
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 0.4rem; */
+  border-radius: 8px;
+  padding: 0 8px;
+  height: 24px;
+}
+
+.sub-list a {
+  color: var(--color-font);
+}
+
+.menu__search.tab__search {
+  padding: 0 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.menu-page-section .btn-container {
+  padding: 0 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.menu-page-section .btn--fourth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem;
+  height: 32px;
+  font-size: 1.2rem;
+}
+
+.btn--fourth .shop-icon-white {
+  display: none;
+}
+
+.shop-icon-primary,
+.shop-icon-white {
+  width: 16px;
+}
+
+.menu-page-section .btn--fourth:hover .shop-icon-white {
+  display: block;
+}
+.menu-page-section .btn--fourth:hover .shop-icon-primary {
+  display: none;
+}
+/* ----------------- food section ------------------- */
+.menu__persian-foods {
+  padding: 0 2rem;
+  /* margin: 0; */
+}
+
+.menu__persian-foods h6 {
   margin-bottom: 1.2rem;
 }
 
@@ -2383,4 +2448,3 @@ textarea {
   height: 32px;
 }
 /* ----------------------  */
-
