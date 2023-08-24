@@ -2269,6 +2269,10 @@ textarea {
   left: 36%;
 }
 
+.menu-page-section {
+  position: relative;
+}
+
 /* ------------------ tab section ------------------- */
 .tab-section {
   background-color: #ededed;
@@ -2339,10 +2343,10 @@ textarea {
 
 .menu-page-section .btn-container {
   padding: 0 2rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 14.5rem;
 }
 
 .menu-page-section .btn--fourth {
@@ -2378,6 +2382,7 @@ textarea {
 
 .menu__persian-foods h6 {
   margin-bottom: 1.2rem;
+  margin-top: 2.4rem;
 }
 
 .food-card__wrapper {
