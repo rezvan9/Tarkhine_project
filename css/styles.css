@@ -2273,7 +2273,7 @@ textarea {
   position: relative;
 }
 
-.menu-page-section h6{
+.menu-page-section h6 {
   margin-top: 2.4rem;
   margin-bottom: 1.2rem;
 }
@@ -2335,6 +2335,7 @@ textarea {
   border-radius: 8px;
   padding: 0 8px;
   height: 24px;
+  white-space: nowrap;
 }
 
 .sub-list a {
@@ -2379,14 +2380,15 @@ textarea {
 .menu-page-section .btn--fourth:hover .shop-icon-primary {
   display: none;
 }
+
 /* ----------------- food section ------------------- */
-.menu__persian-foods {
+.menu__padding{
   padding: 0 2rem;
 }
 
 .food-card__wrapper {
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1.2rem;
 }
 
@@ -2414,6 +2416,7 @@ textarea {
 
 .food-card__title {
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .food-card__details p {
@@ -2448,16 +2451,14 @@ textarea {
   padding: 0.8rem;
   margin-top: 0.4rem;
   justify-self: flex-end;
-  width: 100px;
+  /* width: 100px; */
   height: 32px;
+  white-space: nowrap;
 }
 
-/* ------------------- foreign food --------------- */
-.menu__foreign-foods{
-  padding: 0 2rem;
+.menu__sandwich .food-card__wrapper{
+  margin-bottom: 2.4rem;
 }
-/* --------------------- pizza -------------------- */
-.menu__pizza{
-  margin-top: 0;
-}
+
+
 
