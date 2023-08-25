@@ -2382,7 +2382,7 @@ textarea {
 }
 
 /* ----------------- food section ------------------- */
-.menu__padding{
+.menu__padding {
   padding: 0 2rem;
 }
 
@@ -2456,9 +2456,23 @@ textarea {
   white-space: nowrap;
 }
 
-.menu__sandwich .food-card__wrapper{
+.menu__sandwich .food-card__wrapper {
   margin-bottom: 2.4rem;
 }
 
+@media screen and (min-width: 600px) {
+ 
+  .menu__padding {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
 
+  .tab-section{
+    padding: 1.4rem 10.8rem;
+  }
 
+  .food-card__wrapper {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
