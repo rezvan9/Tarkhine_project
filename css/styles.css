@@ -6,6 +6,7 @@ input {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 /* --------------------- ROOT ------------------ */
@@ -2245,7 +2246,7 @@ textarea {
 }
 /* ------------------------------------------------ */
 /* ------------------- MENU PAGE ----------------- */
-.menu-hero {
+.menu__hero {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.05) 0%,
@@ -2258,7 +2259,7 @@ textarea {
   margin-bottom: 0;
 }
 
-.menu-hero .slide-icons {
+.menu__hero .slide-icons {
   display: none;
 }
 
@@ -2287,7 +2288,7 @@ textarea {
 }
 
 .tab__container {
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2rem 0.5rem;
 }
 
 .tab__container ul {
@@ -2316,6 +2317,12 @@ textarea {
   padding: 0 2rem 0 0;
   margin-top: 0.8rem;
   margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+
 }
 
 .sub-list {
@@ -2324,6 +2331,8 @@ textarea {
   align-items: center;
   gap: 8px;
   overflow-x: auto;
+  padding: 0 2rem 0.5rem 0;
+  width: 100%;
 }
 
 .sub__item {
@@ -2343,8 +2352,9 @@ textarea {
 }
 
 .menu__search.tab__search {
-  padding: 0 2rem;
+  padding: 0 0 0 2rem;
   margin-bottom: 1.4rem;
+  width: 100%;
 }
 
 .menu-page-section .btn-container {
@@ -2460,15 +2470,73 @@ textarea {
   margin-bottom: 2.4rem;
 }
 
-@media screen and (min-width: 600px) {
- 
+@media screen and (min-width: 950px) {
+  .menu__hero .slide-icons {
+    display: block;
+  }
+
   .menu__padding {
     max-width: 1222px;
     margin: 0 auto;
   }
 
-  .tab-section{
+  .tab-section {
     padding: 1.4rem 10.8rem;
+    height: 64px;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .tab__container {
+    padding: 1.4rem 0;
+  }
+
+  .tab__container ul {
+    gap: 32px;
+    align-items: center;
+  }
+
+  .tab-section .tab__item a:hover {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-primary);
+  }
+
+  .sub-list__wrapper {
+    max-width: 1222px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub-list {
+    gap: 0.8rem;
+    justify-content: flex-start;
+    flex-basis: 125%;
+  }
+
+  .sub-list::-webkit-scrollbar{
+    display: none;
+  }
+
+  .sub-list__wrapper .sub__item {
+    border-radius: 64px;
+    font-size: 1.6rem;
+  }
+
+  .sub-list__wrapper .sub__item a {
+    padding: 0 0.8rem;
+  }
+
+  .sub-list__wrapper .sub__item img {
+    width: 16px;
+  }
+
+  .menu__search.menu__search.tab__search {
+    display: inline;
+    height: 40px;
+    background-color: red;
   }
 
   .food-card__wrapper {
