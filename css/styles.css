@@ -2301,14 +2301,13 @@ textarea {
 
 .tab__item a {
   color: #717171;
-  /* padding: 0.2rem 0; */
 }
 
 .tab-section .tab__item a:hover {
   color: var(--color-primary);
   font-size: 1.4rem;
   font-weight: 500;
-  border-bottom: 1px solid var(--color-primary);
+  /* border-bottom: 1px solid var(--color-primary); */
 }
 
 /* -------------------- sub list -------------------- */
@@ -2354,7 +2353,7 @@ textarea {
   width: 100%;
 }
 
-.btn-fix{
+.btn-fix {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2473,10 +2472,10 @@ textarea {
   .menu__padding {
     max-width: 1222px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .tab-section {
-    padding: 1.4rem 10.8rem;
     height: 64px;
     font-size: 2rem;
     margin-bottom: 1.6rem;
@@ -2484,6 +2483,8 @@ textarea {
 
   .tab__container {
     padding: 1.4rem 0;
+    max-width: 1222px;
+    margin: 0 auto;
   }
 
   .tab__container ul {
@@ -2494,15 +2495,14 @@ textarea {
   .tab-section .tab__item a:hover {
     font-size: 2rem;
     font-weight: 700;
-    border-bottom: 1px solid var(--color-primary);
   }
 
   .sub-list__wrapper {
-    max-width: 1222px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 4.3rem;
   }
 
   .sub-list {
@@ -2511,7 +2511,7 @@ textarea {
     flex-basis: 125%;
   }
 
-  .sub-list::-webkit-scrollbar{
+  .sub-list::-webkit-scrollbar {
     display: none;
   }
 
@@ -2528,10 +2528,19 @@ textarea {
     width: 16px;
   }
 
-  .menu__search.menu__search.tab__search {
-    display: inline;
+  .menu__search.tab__search {
+    display: block;
     height: 40px;
-    background-color: red;
+  }
+
+  .menu__persian-foods .btn--fourth{
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    height: 40px;
+  }
+
+  .shop-icon-primary,.shop-icon-white{
+    width: 24px;
   }
 
   .food-card__wrapper {
