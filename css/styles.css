@@ -2313,16 +2313,13 @@ textarea {
 
 /* -------------------- sub list -------------------- */
 .sub-list__wrapper {
-  /* display: none; */
   padding: 0 2rem 0 0;
   margin-top: 0.8rem;
-  margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
-
 }
 
 .sub-list {
@@ -2357,12 +2354,10 @@ textarea {
   width: 100%;
 }
 
-.menu-page-section .btn-container {
-  padding: 0 2rem;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 14.5rem;
+.btn-fix{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-page-section .btn--fourth {
