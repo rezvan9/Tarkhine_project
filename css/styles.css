@@ -2413,7 +2413,7 @@ textarea {
 .food-card__details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   padding: 0.8rem;
   gap: 0;
 }
@@ -2576,15 +2576,18 @@ textarea {
 
   .food-card__details p {
     font-size: 1.4rem;
+    width: 100%;
     height: 50px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space:normal;
     margin-top: 0;
   }
 
-  .food-card .food-card__icons img:first-child{
-    display: none;
+  .food-card__icons .card__heart{
+   display: none;
+  }
+
+  .food-card .card__rate{
+    width: 13rem;
   }
 
   .food-card__details .off-price{
@@ -2601,7 +2604,7 @@ textarea {
 
   .food-card__details .new-price{
     font-size: 1.8rem;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     margin-bottom: 0;
   }
 
@@ -2611,6 +2614,8 @@ textarea {
     padding: 0.8rem 1.6rem;
     width: 100%;
     height: 40px;
-    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
