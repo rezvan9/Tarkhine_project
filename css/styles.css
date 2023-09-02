@@ -200,6 +200,10 @@ a {
   height: 8rem;
   border-radius: 4px;
   position: relative;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09),
+    0px 9px 5px 0px rgba(0, 0, 0, 0.05), 0px 16px 6px 0px rgba(0, 0, 0, 0.01),
+    0px 25px 7px 0px rgba(0, 0, 0, 0);
 }
 
 .menu__item .btn {
@@ -480,10 +484,12 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    line-height: 25.2px;
   }
 
-  .branch__details-title {
+   .branch .branch__details-title {
     font-size: 2rem;
+    font-weight: 600;
   }
 
   .branch__details p {
@@ -521,7 +527,7 @@ a {
     margin-left: 2.4rem;
   }
 
-  .branch__img {
+  .branch__img img{
     width: 100%;
     height: 230px;
   }
@@ -533,7 +539,8 @@ a {
   }
 
   .branch__details {
-    padding: 0.8rem 2rem;
+    padding: 1.6rem 0.8rem;
+    height: fit-content;
   }
 
   .branch__details-title {
@@ -2403,6 +2410,10 @@ textarea {
   border-radius: 4px;
   overflow: hidden;
   height: 100px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09),
+    0px 9px 5px 0px rgba(0, 0, 0, 0.05), 0px 16px 6px 0px rgba(0, 0, 0, 0.01),
+    0px 25px 7px 0px rgba(0, 0, 0, 0);
 }
 
 .food-card__img {
