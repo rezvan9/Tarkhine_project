@@ -70,9 +70,11 @@ a {
   margin-bottom: 4rem;
 }
 
-.active {
+ .nav .active {
   color: var(--color-primary);
   text-decoration: underline;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .my-signature {
