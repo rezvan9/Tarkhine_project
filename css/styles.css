@@ -1121,7 +1121,8 @@ a {
 }
 
 .about-us__first-version {
-  display: flex;
+  /* display: flex; */
+  display: none;
   justify-content: space-between;
   gap: 1.6rem;
 }
@@ -1183,11 +1184,11 @@ a {
     display: none;
   }
   .about-us__second-version {
-    display: flex;
+     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
-  }
+    gap: 2rem; 
+  } 
   .about-us__second-version p {
     font-size: 1.4rem;
     line-height: 2.5rem;
@@ -1784,6 +1785,10 @@ textarea {
 
   .apply-form .btn {
     width: 18.3rem;
+  }
+
+  .deputize-footer .footer-wrapper{
+    padding: 3.2rem 0 8.3rem;
   }
 }
 
