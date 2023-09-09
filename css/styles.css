@@ -70,11 +70,17 @@ a {
   margin-bottom: 4rem;
 }
 
- .nav .active {
+.nav .active {
   color: var(--color-primary);
   text-decoration: underline;
   font-size: 2rem;
   font-weight: 700;
+}
+
+@media screen and (max-width:900px) {
+  .nav .active{
+    font-size: 1.6rem;
+  }
 }
 
 .my-signature {
@@ -86,8 +92,8 @@ a {
   display: none;
 }
 
-@media  screen and (max-width:768px) {
-  .block{
+@media screen and (max-width: 768px) {
+  .block {
     margin-bottom: 2.4rem;
   }
 }
@@ -285,8 +291,8 @@ a {
   }
 }
 
-@media screen and (min-width:768px) {
-  .menu__heading{
+@media screen and (min-width: 768px) {
+  .menu__heading {
     font-size: 2.4rem;
   }
 }
@@ -388,8 +394,9 @@ a {
   }
 }
 
-@media screen and (min-width:1024px) and (max-width: 1124px) {
-  .about-content h6,.about-content p{
+@media screen and (min-width: 1024px) and (max-width: 1124px) {
+  .about-content h6,
+  .about-content p {
     padding-right: 2rem;
   }
 }
@@ -514,7 +521,7 @@ a {
     line-height: 25.2px;
   }
 
-   .branch .branch__details-title {
+  .branch .branch__details-title {
     font-size: 2rem;
     font-weight: 600;
   }
@@ -549,7 +556,7 @@ a {
     margin-left: 2.4rem;
   }
 
-  .branch__img img{
+  .branch__img img {
     width: 100%;
     height: 230px;
   }
@@ -1120,30 +1127,14 @@ a {
   padding: 0 2rem;
 }
 
-.about-us__first-version {
-  /* display: flex; */
-  display: none;
-  justify-content: space-between;
-  gap: 1.6rem;
-}
-
-.about-us__first-version p {
-  text-align: justify;
-  width: 152px;
-}
-
-.about-us__top-desc img {
-  height: 120px;
+.about-us__text image{
+float: left;
 }
 
 .about-us__section p {
   text-align: justify;
   font-size: 1rem;
   line-height: 1.8rem;
-}
-
-.about-us__second-version {
-  display: none;
 }
 
 .about-us__wrapper {
@@ -1179,23 +1170,8 @@ a {
 }
 
 @media screen and (min-width: 410px) and (max-width: 990px) {
-  .about-us__first-version,
-  .first-version {
-    display: none;
-  }
-  .about-us__second-version {
-     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem; 
-  } 
-  .about-us__second-version p {
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-  }
-  .about-us__second-version img {
-    width: 100%;
-  }
+ 
+  
 }
 
 @media screen and (min-width: 610px) and (max-width: 900px) {
@@ -1211,23 +1187,7 @@ a {
   .about-us__section h6 {
     font-size: 2.4rem;
   }
-  .about-us__first-version,
-  .first-version {
-    display: none;
-  }
-  .about-us__second-version {
-    display: flex;
-    justify-content: space-between;
-    gap: 2.4rem;
-  }
-  .about-us__second-version p,
-  .about-us__second-version img {
-    width: 600px;
-  }
-  .about-us__second-version p {
-    font-size: 2rem;
-    line-height: 3.4rem;
-  }
+  
   .about-wrapper {
     padding: 1.6rem 0;
   }
@@ -1483,6 +1443,15 @@ hr {
   margin: 0 auto;
   opacity: 0.3;
 }
+
+@media screen and (min-width:768px) {
+  .deputize__icon img{
+    width: 5rem;
+  }
+  .deputize__icon p{
+    font-size: 1.6rem;
+  }
+}
 /* ------------------- deputize list --------------- */
 .deputize__details {
   display: flex;
@@ -1501,6 +1470,18 @@ hr {
   background-size: 1.3rem;
   padding-right: 3rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width:768px) {
+  .deputize-section h4{
+    font-size: 2rem;
+  }
+  .deputize__details{
+    font-size: 1.6rem;
+  }
+  .deputize__item{
+    background-size: 1.6rem;
+  }
 }
 /* ------------------ get advice ------------------- */
 .get-advice {
@@ -1527,6 +1508,12 @@ hr {
   width: 18rem;
   margin: 1.2rem;
   font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+  .get-advice input{
+    font-size: 1.4rem;
+  }
 }
 
 /* ---------------- apply form ----------------*/
@@ -1579,6 +1566,15 @@ textarea {
   height: 138px;
   border-radius: 4px;
 }
+
+@media screen and (min-width:768px) {
+  .apply-form p{
+    font-size: 1.6rem;
+  }
+  .apply-form form input, textarea{
+    font-size: 1.4rem;
+  }
+}
 /* ------------------ form details ------------------- */
 .form__details {
   display: flex;
@@ -1625,6 +1621,15 @@ textarea {
   margin: 0 auto 3.2rem;
   font-family: "vazir";
   width: 16rem;
+}
+
+@media screen and (min-width:768px) {
+  .form__details .details__title{
+    font-size: 1.4rem;
+  }
+  .form__details span{
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -1693,6 +1698,8 @@ textarea {
   .get-advice .btn {
     grid-column: span 3;
     margin: 2.4rem auto;
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 
   .apply-form p {
@@ -1736,7 +1743,7 @@ textarea {
     margin-top: 2.4rem;
   }
 
-  .details__title,
+  .form__check .details__title,
   .form__img-container .details__title {
     font-size: 1.6rem;
   }
@@ -1747,12 +1754,17 @@ textarea {
 
   .form__details {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .form__check {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1.6rem;
+  }
+
+  .form__check .details__title {
+    grid-column: span 2;
   }
 
   .form__check span {
@@ -1785,9 +1797,10 @@ textarea {
 
   .apply-form .btn {
     width: 18.3rem;
+    font-weight: 500;
   }
 
-  .deputize-footer .footer-wrapper{
+  .deputize-footer .footer-wrapper {
     padding: 3.2rem 0 8.3rem;
   }
 }
@@ -2279,11 +2292,11 @@ textarea {
   }
 }
 
-@media screen and (min-width:1124px) {
-  .comment__wrapper{
+@media screen and (min-width: 1124px) {
+  .comment__wrapper {
     margin-right: 4.2rem;
   }
-  .branch__footer .footer-wrapper{
+  .branch__footer .footer-wrapper {
     padding: 3.2rem 0 8.3rem 0;
   }
 }
