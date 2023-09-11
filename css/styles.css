@@ -1174,7 +1174,7 @@ a {
   text-align: center;
 }
 
-@media screen and (min-width: 610px) and (max-width: 900px) {
+@media screen and (min-width: 610px) and (max-width: 1000px) {
   .about-us__icons .icon-container img {
     width: 2.6rem;
   }
