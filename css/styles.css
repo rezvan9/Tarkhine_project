@@ -1214,6 +1214,9 @@ a {
   .about-us__footer {
     margin-top: 0;
   }
+  .about-us__footer .footer-wrapper{
+    padding: 3.2rem 0 8.3rem;
+  }
 }
 
 @media screen and (min-width:600px) and (max-width:1000px){
@@ -1414,6 +1417,15 @@ a {
   .call-branch .branch__details:hover .branch__buttons {
     margin-top: 1.8rem;
     gap: 0 1rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .call-branch .branch-wrapper{
+    padding: 0;
+  }
+  .call-footer .footer-wrapper{
+    padding: 3.2rem 0 8.3rem;
   }
 }
 /* --------------------------------------------------- */
@@ -2669,6 +2681,10 @@ textarea {
 
   .food-card .btn {
     width: 100%;
+  }
+
+  .menu__footer .footer-wrapper{
+    padding: 3.2rem 0 8.3rem;
   }
 }
 
