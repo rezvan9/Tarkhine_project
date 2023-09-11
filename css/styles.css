@@ -1197,7 +1197,6 @@ a {
   .about-us__text p{
     font-size: 2rem;
     line-height: 36px;
-    
   }
 
   .about-wrapper {
@@ -1217,7 +1216,7 @@ a {
   }
 }
 
-@media screen and (min-width:600px) and (max-width:900px){
+@media screen and (min-width:600px) and (max-width:1000px){
   .about-us__section h6{
     font-size: 2.4rem;
   }
@@ -1227,6 +1226,12 @@ a {
   .about-us__text p{
     font-size: 2rem;
     line-height: 36px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .about-hero .hero__title{
+    font-size: 3rem;
   }
 }
 /* ------------------------------------------------ */
