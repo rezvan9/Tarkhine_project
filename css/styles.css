@@ -2494,6 +2494,7 @@ textarea {
 .food-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid var(--color-border);
   border-radius: 4px;
   overflow: hidden;
@@ -2507,6 +2508,7 @@ textarea {
 .food-card__img {
   object-fit: cover;
   width: 92px;
+  height: 100px;
 }
 
 .food-card__details {
@@ -2514,6 +2516,7 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
   padding: 0.8rem;
   gap: 0;
+  width: 100%;
 }
 
 .food-card__title {
@@ -2718,6 +2721,7 @@ textarea {
 
   .food-card__img {
     min-width: 150px;
+    height: auto;
   }
 
   .food-card__details {
