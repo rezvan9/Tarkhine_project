@@ -7,10 +7,16 @@ toggler.addEventListener("click", (e) => {
 
 // ------------------ active tab ----------------------
 
-const activePage = window.location.pathname;
-const navItems = document.querySelectorAll("nav a").
-forEach(link => {
-  if (link.href.includes(`${activePage}`)) {
-    link.classList.add("active");
+const windowPathname = window.location.pathname;
+const navItems = document.querySelectorAll("nav a");
+
+navItems.forEach((navLinkEl) => {
+  const navLinkPathname = new URL(navLinkEl.href).pathname;
+
+  if (
+    windowPathname === navLinkPathname ||
+    (windowPathname === "/index.html" && navLinkPathname === "/")
+  ) {
+    navLinkEl.classList.add("active");
   }
 });
