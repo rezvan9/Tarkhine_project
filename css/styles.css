@@ -490,10 +490,11 @@ a {
     justify-content: space-between;
     justify-content: center;
   }
+
   .branch {
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
+    height: 344px;
     overflow: hidden;
     border-radius: 8px;
   }
@@ -508,7 +509,7 @@ a {
 
   .branch .branch__img img {
     width: 100%;
-    height: 100%;
+    height: 230px;
     object-fit: cover;
   }
 
@@ -560,17 +561,13 @@ a {
   .branch__img img {
     width: 100%;
     height: 230px;
-  }
-
-  .branch__img img {
-    width: 100%;
-    height: 230px;
     object-fit: cover;
   }
 
   .branch__details {
     padding: 1.6rem 0.8rem;
     height: fit-content;
+    justify-content: flex-start;
   }
 
   .branch__details-title {
@@ -579,6 +576,7 @@ a {
 
   .branch__details p {
     font-size: 1.4rem;
+    height: 50px;
   }
 }
 
